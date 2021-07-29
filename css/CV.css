@@ -1,0 +1,558 @@
+body {
+  background-color: #161623;
+  margin: 0;
+}
+.container {
+  position: relative;
+  left: 15%;
+  top: 50px;
+  width: 70%;
+  height: 80vh;
+  border-radius: 10px;
+  box-shadow: 20px 20px 50px 2px rgba(0, 0, 0, 0.5);
+  background: rgb(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+/*about me*/
+.tittle {
+  color: white;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  width: 50%;
+  border-radius: 10px;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  margin: 0;
+  padding: 0;
+  animation-name: tittle;
+  animation-duration: 2s;
+}
+
+.text {
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  color: white;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  width: 50%;
+  margin: 0;
+  animation-name: aboutme;
+  animation-duration: 2s;
+}
+
+#picture {
+  width: 250px;
+  position: absolute;
+  right: 1%;
+  top: 2%;
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+  animation-name: picture;
+  animation-duration: 2s;
+}
+#buttons {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  top: 70%;
+  left: 18%;
+  width: 100%;
+  transition: left;
+  animation-name: buttons;
+  animation-duration: 2s;
+}
+#buttons div {
+  width: 15%;
+}
+.button {
+  border-radius: 10px;
+  border-color: white;
+  color: white;
+  background-color: rgb(255, 255, 255, 0.03);
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+  font-family: "Poppins", sans-serif;
+  margin-top: 60%;
+  padding: 10px;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+
+/*A partir de aqui Skills */
+#skills {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  top: 25%;
+  left: 5%;
+}
+
+.skills-container {
+  width: 30%;
+  align-items: center;
+}
+
+.skills-container li {
+  margin: 1%;
+}
+.skills-container img {
+  width: 0%;
+  filter: invert(100%);
+  overflow: hidden;
+}
+#light1 {
+  animation: typewriter 1.5s steps(24) 1s forwards;
+  animation-delay: 0.1s;
+}
+#light2 {
+  animation: typewriter 1.5s steps(24) 1s forwards;
+  animation-delay: 0.5s;
+}
+#light3 {
+  animation: typewriter 1.5s steps(24) 1s forwards;
+  animation-delay: 1s;
+}
+#light4 {
+  animation: typewriter 1.5s steps(24) 1s forwards;
+  animation-delay: 1.5s;
+}
+.flex-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+}
+
+.flex-container div {
+  margin: 1%;
+}
+#legend {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+#caption {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+}
+#caption div {
+  width: 15%;
+}
+#caption h4,
+h3 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+#caption h4 {
+  float: left;
+  margin: 2%;
+}
+#caption img {
+  width: 23px;
+  filter: invert(100%);
+  float: left;
+}
+
+/*A partir de aqui Contact me */
+#contactMe {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  top: 15%;
+  left: 5%;
+  align-items: center;
+  animation-name: contactme;
+  animation-duration: 2s;
+}
+#contactMe div {
+  margin: 7%;
+  border-radius: 0.5rem;
+  font-size: 0rem;
+  text-align: center;
+  width: 25%;
+  box-shadow: 0.2rem 0.3rem 1rem 0.2rem black;
+  transition: font-size 0.25s;
+}
+#contactMe div:hover {
+  font-size: 0.75rem;
+}
+#contactMe img {
+  width: 50px;
+  filter: invert(100%);
+  top: 5%;
+}
+
+/*Projects*/
+#projects {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 18%;
+  left: 0%;
+  animation-name: projects;
+  animation-duration: 2s;
+}
+.project {
+  margin: 2.5%;
+  position: relative;
+  border-radius: 0.5rem;
+  width: 20%;
+  box-shadow: 0.2rem 0.3rem 1rem 0.2rem black;
+}
+.project img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  float: left;
+  z-index: 4;
+  transition: opacity 1s;
+}
+.project img:hover {
+  opacity: 10%;
+}
+.info {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  left: 0%;
+  text-align: left;
+  padding-left: 2%;
+  height: auto;
+  float: left;
+  width: auto;
+  z-index: 3;
+}
+
+/*Animations*/
+@keyframes buttons {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 18%;
+  }
+}
+
+@keyframes text {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 5%;
+  }
+}
+
+@keyframes tittle {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 5%;
+  }
+}
+
+@keyframes picture {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 2%;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 1.5em;
+  }
+}
+@keyframes projects {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+@keyframes aboutme {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 5%;
+  }
+}
+@keyframes contactme {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 5%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    width: 80%;
+    left: 10%;
+  }
+  /*About me*/
+  #picture {
+    width: 250px;
+    position: absolute;
+    right: 1.5%;
+    top: 2%;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+    animation-name: picture;
+    animation-duration: 2s;
+  }
+  /*Contact me*/
+  #contactMe {
+    left: 17%;
+  }
+  #contactMe div {
+    width: 50%;
+  }
+  #contactMe div:hover {
+    font-size: 1rem;
+  }
+  #contactMe img {
+    width: 40px;
+  }
+  /*Projects*/
+  #projects {
+    width: 100%;
+    top: 20%;
+    left: 5%;
+  }
+  .project {
+    margin: 7%;
+    position: relative;
+    border-radius: 0.5rem;
+    width: 30%;
+    box-shadow: 0.2rem 0.3rem 1rem 0.2rem black;
+  }
+  /*Skills*/
+  #skills {
+    font-size: 20px;
+    top: 20%;
+  }
+  .skills-container {
+    width: 50%;
+  }
+  #legend {
+    top: 65%;
+    left: 5%;
+  }
+  #caption {
+    top: 75%;
+    width: 100%;
+  }
+  #caption div {
+    width: 100%;
+  }
+  #buttons {
+    top: 80%;
+    left: 5%;
+  }
+  #buttons div {
+    margin: 1%;
+    width: 20%;
+  }
+  /*Animations*/
+  @keyframes buttons {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 5%;
+    }
+  }
+  @keyframes projects {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 5%;
+    }
+  }
+  @keyframes contactme {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 17%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .tittle {
+      top: 5%;
+    }
+    /*About me*/
+    #picture {
+      width: 100px;
+      right: 1.5%;
+    }
+    .text {
+      font-size: 15px;
+      width: 100%;
+    }
+    .tittle {
+      color: white;
+      text-align: left;
+      font-family: "Poppins", sans-serif;
+      width: 50%;
+      border-radius: 10px;
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      margin: 0;
+      padding: 0;
+      animation-name: tittle;
+      animation-duration: 2s;
+    }
+    .tittle {
+      font-size: 20px;
+      color: white;
+      text-align: left;
+      font-family: "Poppins", sans-serif;
+      width: 50%;
+      border-radius: 10px;
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      margin: 0;
+      padding: 0;
+      animation-name: tittle;
+      animation-duration: 2s;
+    }
+    /*Contact me*/
+    #contactMe {
+      left: 0%;
+      top: 30%;
+    }
+    #contactMe div {
+      width: 100%;
+    }
+    #contactMe div:hover {
+      width: 100%;
+      font-size: 13px;
+    }
+    #contactMe img {
+      width: 30px;
+    }
+    /*Projects*/
+    #projects {
+      width: 100%;
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      top: 20%;
+      left: 0%;
+      animation-name: text;
+      animation-duration: 2s;
+    }
+    .project {
+      margin: 5%;
+      position: relative;
+      border-radius: 0.5rem;
+      width: 40%;
+      box-shadow: 0.2rem 0.3rem 1rem 0.2rem black;
+    }
+    .info {
+      font-size: 10px;
+    }
+    /*Skills*/
+    #skills {
+      font-size: 10px;
+      top: 15%;
+    }
+    .skills-container {
+      width: 100%;
+      margin: 0%;
+    }
+    #legend {
+      top: 60%;
+      font-size: 12px;
+      left: 5%;
+    }
+    #caption {
+      top: 67%;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    #caption div {
+      width: 50%;
+      font-size: 10px;
+    }
+    #buttons {
+      top: 72%;
+      left: 25%;
+      flex-wrap: wrap;
+      width: 50%;
+    }
+    #buttons div {
+      margin: 0%;
+      width: 50%;
+    }
+    .button {
+      font-size: 8px;
+    }
+    /*Animations*/
+    @keyframes buttons {
+      from {
+        left: -100%;
+      }
+      to {
+        left: 25%;
+      }
+    }
+    @keyframes text {
+      from {
+        left: 100%;
+      }
+      to {
+        left: 0%;
+      }
+    }
+    @keyframes aboutme {
+      from {
+        left: 100%;
+      }
+      to {
+        left: 5%;
+      }
+    }
+    @keyframes contactme {
+      from {
+        left: 100%;
+      }
+      to {
+        left: 0%;
+      }
+    }
+  }
+}
